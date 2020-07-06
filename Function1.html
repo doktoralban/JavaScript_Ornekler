@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Finding the largest number.</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+function findMax() {
+  var i;
+  var max = -Infinity;
+  for(i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+} 
+document.getElementById("demo").innerHTML ="Max(40, 150, 6) : " +  findMax(40, 150, 6);
+var myFunction = function (a, b) {return a * b}
+document.getElementById("demo1").innerHTML ="Sum(4, 3) : " +  myFunction(4, 3);
+
+
+
+
+</script>
+
+</body>
+</html>

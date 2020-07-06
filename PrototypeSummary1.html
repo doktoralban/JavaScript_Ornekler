@@ -1,0 +1,33 @@
+<html>
+ 
+   
+    <body>
+   <script>
+Array.prototype.OrtalamaAl = function(){
+
+var toplamSonucu =0;
+var bolumSonucu=0
+
+for (let index = 0; index < this.length; index++) {
+    
+    toplamSonucu +=this[index]; 
+}
+bolumSonucu = toplamSonucu / this.length;
+
+return bolumSonucu;
+
+}
+
+var sayilar =[10,20,30,40,50,60,70,80,90,100];
+
+document.write("Ortalama : " + sayilar.OrtalamaAl());
+
+   </script>
+
+     
+    </body>
+   
+   
+   
+   
+    </html>
